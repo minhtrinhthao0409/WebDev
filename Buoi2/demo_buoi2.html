@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel = "stylesheet" href = "style.css">
+        <style>
+            /* sử dụng internal css */
+            /* selector h1 */
+            h1 {
+                text-shadow: 2px 2px rgb(207, 123, 123);
+            }
+
+            p {
+                color: blue
+            }
+
+            .text-center {
+                text-align: center;
+            }
+            #react {
+                text-transform: uppercase;
+                text-shadow: 2px 2px yellow;
+            }
+            body {
+                background-image: linear-gradient(to bottom right, rgb(212, 137, 195), rgb(187, 23, 237));
+            }
+            /* selector theo ngữ cảnh*/
+            div p {
+                text-transform: uppercase;
+            }
+            p i {
+                font-weight: bold;
+            }
+
+            img {
+                border-radius: 50px;
+                width: 50%;
+            }
+
+            img:hover {
+                opacity: 50%;
+                /*border: 15px  solid ;*/
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 style = "color: rgb(130, 29, 29)">Đại học Kinh tế TP.HCM</h1>
+        <h1>Khoa Công nghệ thông tin Kinh doanh</h1>
+        <h2 class = "text-center">Lớp Phát triển web</h2>
+        <p class = "text-center">Buổi 2: ngày <i>29/03/2025</i></p>
+        <p id = "react">Thuyết trình REACT</p>
+        <div>
+            <p>Phòng học N1-303</p>
+            <img src = "https://www.ueh.edu.vn/images/events/Giving_Week_pop%20up_1600x800.png">
+        </div>
+
+    </body>
+</html>
