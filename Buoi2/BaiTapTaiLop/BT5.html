@@ -1,53 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Câu 5</title>
-    <meta charset="UTF-8">
-    <link rel = "stylesheet" href = "style_bt5.css">
+    <link rel="stylesheet" href="styles_bt5.css">
     <style>
-        body {
-            background-color: rgb(255, 221, 171);
-            font-family: "Helvetica";
+                /* Introduction section */
+        .introduce {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
         }
 
-        .introduce {
-            display: flex; /* Use flexbox to align h1 and image */
-            padding: 50px; 
+        .intro-text {
+            flex: 1;
         }
-        .introduce img {
-            width: auto;
-            margin: 0;
-            padding-left: 350px;
+
+        .introduce h1 {
+            padding-top: 50px;
+            padding-left: 50px;
+            color: rgb(148, 80, 52);
+            font-size: 100px;
+            margin-bottom: 20px;
         }
+
+        .highlight {
+            color: rgb(95, 139, 76);
+        }
+
+        .highlight-text {
+            color: rgb(148, 80, 52);
+        }
+
         .introduce p {
             font-size: 30px;
+            padding-left: 150px;
+            margin-top: 0;
         }
-        
+
+        .introduce img {
+            max-width: 400px;
+            height: auto;
+            margin-left: 50px;
+        }
+
+        /* Experience section */
+        .experience {
+            padding: 50px;
+            
+        }
+
+        .experience h2 {
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        .experience ul {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-left: 40px;
+        }
+
+        .experience li {
+            margin-bottom: 15px;
+            font-size: 30px;
+            display: inline;
+            list-style-type: circle;
+            padding: 50px;
+            gap: 40px;
+        }
     </style>
 </head>
 <body>
     <nav id="navbar">
         <h1>Minh Trinh Thao</h1>
-        <a href="#">About me</a>
-        <a href="#">Experience</a>
-        <a href="#">Skill</a>
-        <a href="#">Contact</a>
+        <div class="nav-links">
+            <a href="#introduce">About me</a>
+            <a href="#experience">Experience</a>
+            <a href="#">Skill</a>
+            <a href="#">Contact</a>
+        </div>
     </nav>
-    <hr style="border: 1px solid black; width: auto; margin: 0;">
-    <div class = "introduce">
-        <div>
-            <h1 style = "padding-top: 50px;padding-left: 50px; color: rgb(148, 80, 52); font-size:45px;font-size:100px;">
-                Hi, I'm <span style="color:rgb(95, 139, 76) ">Minh</span>
-            </h1>
+
+    <hr style="border: 1.5px solid black; width: 85%; margin: 15;">
+    
+    <div class="introduce">
+        <div class="intro-text">
+            <h1>Hi, I'm <span class="highlight">Minh</span></h1>
             <p>
                 Đây là bài tập tuần thứ 2 môn<br>
-                <strong style = "color:rgb(148, 80, 52);">Phát triển ứng dụng Web</strong> 
+                <strong class="highlight-text">Phát triển ứng dụng Web</strong> 
             </p>
-        
         </div>
-    <img src = "profile_img.jpg">    
+        <img src="profile_img.jpg" alt="Minh's profile picture">    
     </div>
     
+    <hr style="border: 1.5px solid black; width: 85%; margin: 15;">
+    
+    <section id="experience" class="experience">
+        <h2 style = "color: rgb(148, 80, 52);">My Experience</h2>
+        <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+        </ul>
+    </section>
 </body>
 </html>
