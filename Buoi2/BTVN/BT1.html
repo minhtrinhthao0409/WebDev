@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Design</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header - Light Blue */
+    header {
+      background-color: #92b4e9;
+      padding: 20px;
+      height: 250px;
+    }
+
+    .alert-bar {
+      background-color: #ff0000;
+      color: white;
+      height: 100px;
+      padding: 10px 20px;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    .sidebar {
+      background-color: #fdb813;
+      width: 20%;
+      min-width: 200px;
+      padding: 20px;
+    }
+
+    .sidebar nav ul {
+      list-style-type: none;
+    }
+
+    .sidebar nav ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar nav ul li a {
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      color: #000;
+      border-radius: 4px;
+    }
+
+    .sidebar nav ul li a:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    /* Main Content - Light Green */
+    .main-content {
+      background-color: #c2f970;
+      flex: 1;
+      padding: 20px;
+    }
+
+    .main-content h1 {
+      margin-bottom: 20px;
+    }
+
+    .main-content p {
+      margin-bottom: 15px;
+    }
+
+    /* Footer - Blue */
+    footer {
+      background-color: #0066b3;
+      color: white;
+      padding: 20px;
+      height: 300px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header - Light Blue -->
+  <header>
+    <h1></h1>
+  </header>
+
+  <!-- Alert Bar - Red -->
+  <div class="alert-bar">
+    
+  </div>
+
+  <!-- Main Container with Sidebar and Content -->
+  <div class="container">
+    <!-- Sidebar - Orange/Yellow -->
+    <div class="sidebar">
+     
+    </div>
+
+    <!-- Main Content - Light Green -->
+    <div class="main-content">
+      
+    </div>
+  </div>
+
+  <!-- Footer - Blue -->
+  <footer>
+   
+  </footer>
+</body>
+</html>
