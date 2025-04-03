@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài tập 3</title>
+    <title>Bài tập 4</title>
     <style>
         * {
             margin: 0;
@@ -12,20 +12,19 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
             height: 100vh;
         }
 
         .container {
             display: grid;
-            grid-template-rows: 0.5fr 25px 1fr 1fr 0.5fr; 
+            grid-template-rows: 0.5fr 35px 1fr 1fr 0.5fr; 
             height: 100%;
             width: 100%;
         }
 
         /* Top Section */
         .top-row {
-            background-color: #b3c6ff; /* Light blue */
+            background-color: #b3c6ff; 
         }
 
         .red-line {
@@ -35,11 +34,17 @@
         /* Middle Section */
         .middle-section {
             display: grid;
-            grid-template-columns: 3fr 1fr;
+            grid-template-columns: 1fr 3fr 1fr;
+            
         }
 
         .middle-left {
-            background-color: #0052cc; 
+            background-color: #067c1a; 
+        }
+
+        .middle-mid {
+            background-color: #0052cc;
+            grid-template-columns: 1fr 2fr 2fr;
         }
 
         .middle-right {
@@ -58,15 +63,23 @@
         /* Bottom Section */
         .bottom-section {
             display: grid;
-            grid-template-columns: 1fr 5fr;
+            grid-template-columns: 1fr 4fr;
+            
+        }
+        .bottom-left {
+            display: grid;
+            grid-template-rows: 1fr 1fr; 
         }
 
-        .bottom-left {
-            background-color: #ff8c00; /* Orange */
+        .bottom-left-top {
+            background-color: aqua;
+        }
+        .bottom-left-bottom {
+            background-color: #ff8c00; 
         }
 
         .bottom-right {
-            background-color: #ccff00; /* Yellow */
+            background-color: #ccff00; 
         }
 
         /* Footer (class end) */
@@ -84,6 +97,7 @@
         <!-- Middle Section -->
         <div class="middle-section">
             <div class="middle-left"></div>
+            <div class = "middle-mid"></div>
             <div class="middle-right">
                 <div class="middle-right-top"></div>
                 <div class="middle-right-bottom"></div>
@@ -92,8 +106,14 @@
 
         <!-- Bottom Section -->
         <div class="bottom-section">
-            <div class="bottom-left"></div>
-            <div class="bottom-right"></div>
+            <div class="bottom-left">
+                <div class="bottom-left-top"></div>
+                <div class="bottom-left-bottom"></div>
+            </div>
+            
+            <div class="bottom-right">
+                
+            </div>
         </div>
 
         <!-- Footer -->
