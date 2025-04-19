@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        table {
+            border-style: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function getIndex() {
+            sel_opt = document.getElementById("sel_opt");
+
+            sel_index = sel_opt.selectedIndex;
+            document.getElementById("selectedIndex").value = sel_index;
+
+            document.getElementById("val").value = sel_opt.options[sel_index].value;
+
+            document.getElementById("opttext").value = sel_opt.options[sel_index].text;
+        }
+    </script>
+    <div class="container">
+        <h1>Select Box Properties</h1>
+        <div class="controls">
+            <select id="sel_opt">
+                <option value="val0">sea zero</option>
+                <option value="val1">sea one</option>
+                <option value="val2">sea two</option>
+                <option value="val3">sea three</option>
+            </select>
+            <br>
+            <input type = "button" value = "Show Index" onclick = "getIndex()">
+            <br>
+            <input type = "text" name = "" id = "selectedIndex">Selected Index
+            <br>
+            <input type = "text" name = "" id = "val">option[].val
+            <br>
+            <input type = "text" name = "" id = "opttext">option[].text
+        </div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        #btnNo {
+            position: absolute;
+        }
+    </style>
+    <script lang="javascript">
+        function onProcess() {
+            btnNo = document.getElementById("btnNo");
+
+            maxX = Math.floor(Math.random() * window.innerWidth);
+            maxY = Math.floor(Math.random() * window.innerHeight);
+
+            btnNo.style.left = maxX +"px";
+            btn.style.top = maxY +"px";
+        }
+
+        function yesProcess() {
+            tloi = confirm("Bạn có chắc không?");
+            if (tloi) {
+                _status = document.getElementById("status");
+                _status.innerHTML = "Mình đi chơi nhé";
+            }
+            else {
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2 id = "status">Bạn làm người iu mình nhé</h2>
+    <input type = "button" id = "btnYes" value = "Đồng ý!" onclick = "yesProcess()">
+    <input type = "button" id = "btnNo" value = "Để suy nghĩ thêm!" onclick = "onProcess()">
+
+</body>
+</html>

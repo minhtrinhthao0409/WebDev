@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        div {
+            color: red;
+        }
+        #tbao_uname {
+            display: none;
+        }
+        #tbao_upass {
+            display: none;
+        }
+    </style>
+
+    <script>
+        function checkLogin() {
+            uname = document.getElementById("uname");
+            upasss = document.getElementById("upass");
+            tbao_unamme = document.getElementById("tbao_uname");
+            tbao_upass = document.getElementById("tbao_upass");
+
+            if (uname.value == "") {
+                tbao_uname.style.display = "block";
+
+                uname.focus();
+                return false;
+            }
+            if (upass.value == "") {
+                tbao_upass.style.display = "block";
+                return false;
+            }
+
+
+            
+
+        }
+    </script>
+</head>
+<body>
+    <form action = "" method = "post">
+        <h2>Đăng nhập</h2>
+        Username <input type = "text" name = "uname" id = "uname"><br>
+        <div id = "tbao_uname">Bạn chưa nhập usename</div>
+        Password <input type = text" name = "upass" id = "upass"><br>
+        <div id = "tbao_upass">Bạn chưa nhập password</div>
+        <input type = "submit" value = "Login" onclick = "return checkLogin()">
+    </form>
+
+</body>
+</html>
